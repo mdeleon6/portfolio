@@ -27,7 +27,7 @@ export const projects = [
       "Streamlit app to set up the audit, review results and draft tickets",
     ],
     tech: ["SQL (BigQuery)", "GA4", "Python", "Claude API", "Streamlit"],
-    live: "",
+    live: "https://tracking-plan-auditor.streamlit.app/",
     code: "https://github.com/mdeleon6/tracking-plan-auditor",
   },
   {
