@@ -15,6 +15,22 @@ export const profile = {
 
 export const projects = [
   {
+    title: "Tracking Plan Auditor",
+    question: "Can a team catch broken analytics tracking before it reaches the dashboards?",
+    answer:
+      "On Google's public GA4 store data, a manual audit found 5 tracking problems, such as add_to_cart missing on 18 of 92 days while purchases continued. Automated checks found them again, plus issues the audit missed, like transaction_id arriving as a number on 456 purchases.",
+    highlights: [
+      "Checks written from the tracking plan, so new fields need no new SQL",
+      "Counts inside BigQuery; no event-level data leaves the warehouse",
+      "Tested with planted bugs: caught every drop of 70% or more",
+      "Claude drafts the tickets; Python does all the math, with a number guardrail",
+      "Streamlit app to set up the audit, review results and draft tickets",
+    ],
+    tech: ["SQL (BigQuery)", "GA4", "Python", "Claude API", "Streamlit"],
+    live: "",
+    code: "https://github.com/mdeleon6/tracking-plan-auditor",
+  },
+  {
     title: "Canada Labour Code RAG",
     question: "Can Claude answer questions about the Canada Labour Code, with citations?",
     answer:
